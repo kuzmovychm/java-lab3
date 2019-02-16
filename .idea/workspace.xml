@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65614171-a0f8-40ff-ab64-b9c0e0b0b813" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/managers/GameRoomManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/managers/IGameRoomManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/AgeGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Ball.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Doll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Figures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/GameRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Toy.java" afterDir="false" />
-    </list>
+    <list default="true" id="65614171-a0f8-40ff-ab64-b9c0e0b0b813" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +137,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550314360638" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550315377059" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -198,18 +184,17 @@
       <option name="presentableId" value="Default" />
       <updated>1550257214968</updated>
       <workItem from="1550257216654" duration="4289000" />
-      <workItem from="1550308023443" duration="4605000" />
+      <workItem from="1550308023443" duration="4886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8894000" />
+    <option name="totallyTimeSpent" value="9175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -219,7 +204,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
