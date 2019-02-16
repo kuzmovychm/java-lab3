@@ -1,0 +1,64 @@
+package models;
+
+public class Figures extends Toy {
+
+    private int number;
+    private String type;
+
+    public Figures(double price, Size size) {
+        super(price, size);
+        switch (size) {
+            case SMALL:
+            {
+                this.setToyType("small figures");
+            } break;
+            case MEDIUM:
+            {
+                this.setToyType("medium figures");
+            } break;
+            case LARGE:
+            {
+                this.setToyType("large figures");
+            }break;
+        }
+    }
+
+    public Figures(double price, Size size, int number, String type) {
+        this(price, size);
+        this.number = number;
+        this.type = type;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Figures{" +
+                "price=" + this.getPrice() +
+                ", size=" + this.getSize() +
+                ", toyType='" + this.getToyType() + '\'' +
+                ", number=" + number +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
+    @Override
+    public void play() {
+
+    }
+
+}
