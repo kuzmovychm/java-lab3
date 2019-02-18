@@ -7,7 +7,7 @@ import java.util.*;
 
 public class GameRoomManager implements IGameRoomManager {
 
-    List<GameRoom> gameRooms = new LinkedList<>();
+    private List<GameRoom> gameRooms = new LinkedList<>();
 
     public GameRoomManager() {
     }
@@ -36,8 +36,13 @@ public class GameRoomManager implements IGameRoomManager {
         }
     }
 
-    public void sortToysByPrice(List<Toy> toys) {
-        toys.sort((Toy o1, Toy o2) -> (int) (o1.getPrice() - o2.getPrice()));
+    public void sortToysByPrice(List<Toy> toys, SortOrder sortOrder) {
+        if (sortOrder == SortOrder.ASCENDING) {
+            toys.sort((Toy o1, Toy o2) -> (int) (o1.getPrice() - o2.getPrice()));
+        } else {
+            toys.sort((Toy o1, Toy o2) -> (int) (o2.getPrice() - o1.getPrice()));
+        }
+
     }
 
     public void sortToysByType(List<Toy> toys) {

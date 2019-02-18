@@ -1,4 +1,5 @@
 import managers.GameRoomManager;
+import managers.SortOrder;
 import models.*;
 
 import java.util.LinkedList;
@@ -17,18 +18,20 @@ public class Main {
         GameRoom gameRoom = new GameRoom(67, AgeGroup.PRESCHOOLERS, 3021);
         gameRoomManager.addGameroom(gameRoom);
 
-        gameRoomManager.buyToy(gameRoomManager.getGameRooms().get(0), barbie);
-        gameRoomManager.buyToy(gameRoomManager.getGameRooms().get(0), mcQueen);
-        gameRoomManager.buyToy(gameRoomManager.getGameRooms().get(0), cubes);
-        gameRoomManager.buyToy(gameRoomManager.getGameRooms().get(0), ball);
+        gameRoomManager.buyToy(gameRoom, barbie);
+        gameRoomManager.buyToy(gameRoom, mcQueen);
+        gameRoomManager.buyToy(gameRoom, cubes);
+        gameRoomManager.buyToy(gameRoom, ball);
+        System.out.println(gameRoom.getToys());
 
+        gameRoomManager.sortToysByPrice(gameRoom.getToys(), SortOrder.ASCENDING);
         System.out.println(gameRoomManager.getGameRooms().get(0).getToys());
-        gameRoomManager.sortToysByPrice(gameRoomManager.getGameRooms().get(0).getToys());
-        //System.out.println(gameRoomManager.getGameRooms().get(0).getToys());
 
-        System.out.println(gameRoomManager.getGameRooms().get(0).getToys());
-        gameRoomManager.sortToysByType(gameRoomManager.getGameRooms().get(0).getToys());
-        System.out.println(gameRoomManager.getGameRooms().get(0).getToys());
+        gameRoomManager.sortToysByPrice(gameRoom.getToys(), SortOrder.DESCENDING);
+        System.out.println(gameRoom.getToys());
+
+        gameRoomManager.sortToysByType(gameRoom.getToys());
+        System.out.println(gameRoom.getToys());
 
     }
 

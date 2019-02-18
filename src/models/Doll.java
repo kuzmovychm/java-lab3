@@ -47,7 +47,7 @@ public class Doll extends Toy {
 
     @Override
     public void play() {
-
+        System.out.println("Playing with a doll");
     }
 
 }

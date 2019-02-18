@@ -8,18 +8,15 @@ public class Figures extends Toy {
     public Figures(double price, Size size) {
         super(price, size);
         switch (size) {
-            case SMALL:
-            {
+            case SMALL: {
                 this.setToyType(ToyType.FIGURES_SMALL);
             } break;
-            case MEDIUM:
-            {
+            case MEDIUM: {
                 this.setToyType(ToyType.FIGURES_MEDIUM);
             } break;
-            case LARGE:
-            {
+            case LARGE: {
                 this.setToyType(ToyType.FIGURES_LARGE);
-            }break;
+            } break;
         }
     }
 
@@ -58,7 +55,7 @@ public class Figures extends Toy {
 
     @Override
     public void play() {
-
+        System.out.println("Playing with figures");
     }
 
 }

@@ -10,7 +10,7 @@ public interface IGameRoomManager {
 
     public void addGameroom(GameRoom gameRoom);
     public void buyToy(GameRoom gameRoom ,Toy toy);
-    public void sortToysByPrice(List<Toy> toys);
+    public void sortToysByPrice(List<Toy> toys, SortOrder sortOrder);
     public void sortToysByType(List<Toy> toys);
 
 }
