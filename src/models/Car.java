@@ -9,15 +9,15 @@ public class Car extends Toy {
         switch (size) {
             case SMALL:
             {
-                this.setToyType("small car");
+                this.setToyType(ToyType.CAR_SMALL);
             } break;
             case MEDIUM:
             {
-                this.setToyType("medium car");
+                this.setToyType(ToyType.CAR_MEDIUM);
             } break;
             case LARGE:
             {
-                this.setToyType("large car");
+                this.setToyType(ToyType.CAR_LARGE);
             }break;
         }
     }

@@ -10,15 +10,15 @@ public class Figures extends Toy {
         switch (size) {
             case SMALL:
             {
-                this.setToyType("small figures");
+                this.setToyType(ToyType.FIGURES_SMALL);
             } break;
             case MEDIUM:
             {
-                this.setToyType("medium figures");
+                this.setToyType(ToyType.FIGURES_MEDIUM);
             } break;
             case LARGE:
             {
-                this.setToyType("large figures");
+                this.setToyType(ToyType.FIGURES_LARGE);
             }break;
         }
     }

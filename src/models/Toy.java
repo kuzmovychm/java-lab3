@@ -4,7 +4,7 @@ public abstract class Toy<T> {
 
     private double price;
     private Size size;
-    private String toyType;
+    private ToyType toyType;
 
     public Toy(double price, Size size) {
         this.price = price;
@@ -27,11 +27,11 @@ public abstract class Toy<T> {
         this.size = size;
     }
 
-    public String getToyType() {
+    public ToyType getToyType() {
         return toyType;
     }
 
-    public void setToyType(String toyType) {
+    public void setToyType(ToyType toyType) {
         this.toyType = toyType;
     }
 

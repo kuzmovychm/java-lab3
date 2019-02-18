@@ -9,15 +9,15 @@ public class Doll extends Toy {
         switch (size) {
             case SMALL:
             {
-                this.setToyType("small doll");
+                this.setToyType(ToyType.DOLL_SMALL);
             } break;
             case MEDIUM:
             {
-                this.setToyType("medium doll");
+                this.setToyType(ToyType.DOLL_MEDIUM);
             } break;
             case LARGE:
             {
-                this.setToyType("large doll");
+                this.setToyType(ToyType.DOLL_LARGE);
             }break;
         }
     }

@@ -41,6 +41,6 @@ public class GameRoomManager implements IGameRoomManager {
     }
 
     public void sortToysByType(List<Toy> toys) {
-        toys.sort((Toy o1, Toy o2)->o1.getClass().toString().compareTo(o2.getClass().toString()));
+        toys.sort((Toy o1, Toy o2)->o1.getToyType().compareTo(o2.getToyType()));
     }
 }
