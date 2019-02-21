@@ -1,8 +1,17 @@
-package main.java.ua.lviv.iot;
+package ua.lviv.iot;
 
-import main.java.ua.lviv.iot.managers.GameRoomManager;
-import main.java.ua.lviv.iot.managers.SortOrder;
-import main.java.ua.lviv.iot.models.*;
+import ua.lviv.iot.managers.GameRoomManager;
+import ua.lviv.iot.managers.SortOrder;
+import ua.lviv.iot.models.AgeGroup;
+import ua.lviv.iot.models.Ball;
+import ua.lviv.iot.models.Car;
+import ua.lviv.iot.models.Doll;
+import ua.lviv.iot.models.Figures;
+import ua.lviv.iot.models.GameRoom;
+import ua.lviv.iot.models.Size;
+import ua.lviv.iot.models.Toy;
+
+
 
 
 public final class Main {

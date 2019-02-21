@@ -1,9 +1,10 @@
-package main.java.ua.lviv.iot.managers;
+package ua.lviv.iot.managers;
 
-import main.java.ua.lviv.iot.models.GameRoom;
-import main.java.ua.lviv.iot.models.Toy;
+import ua.lviv.iot.models.GameRoom;
+import ua.lviv.iot.models.Toy;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
 
 public class GameRoomManager implements IGameRoomManager {
 
@@ -46,6 +47,6 @@ public class GameRoomManager implements IGameRoomManager {
     }
 
     public void sortToysByType(final List<Toy> toys) {
-        toys.sort((Toy o1, Toy o2)->o1.getToyType().compareTo(o2.getToyType()));
+        toys.sort((Toy o1, Toy o2) -> o1.getToyType().compareTo(o2.getToyType()));
     }
 }

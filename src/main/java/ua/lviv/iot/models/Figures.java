@@ -1,4 +1,4 @@
-package main.java.ua.lviv.iot.models;
+package ua.lviv.iot.models;
 
 public class Figures extends Toy {
 
@@ -16,6 +16,9 @@ public class Figures extends Toy {
             } break;
             case LARGE: {
                 this.setToyType(ToyType.FIGURES_LARGE);
+            } break;
+            default: {
+                System.out.println("");
             } break;
         }
     }

@@ -1,4 +1,6 @@
-package main.java.ua.lviv.iot.models;
+package ua.lviv.iot.models;
+
+import java.util.Objects;
 
 public class Child {
 
@@ -40,12 +42,20 @@ public class Child {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Child child = (Child) o;
         return age == child.age &&
                 name.equals(child.name) &&
                 parentName.equals(child.parentName);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, name, parentName);
+    }
 }

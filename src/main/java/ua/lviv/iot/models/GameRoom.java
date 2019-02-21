@@ -1,4 +1,4 @@
-package main.java.ua.lviv.iot.models;
+package ua.lviv.iot.models;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -87,7 +87,7 @@ public class GameRoom {
     }
 
     public void removeChild(Child child) {
-        children.stream().forEach(o1 ->{
+        children.stream().forEach(o1 -> {
             if (o1.equals(child)) {
                 children.remove(o1);
                 presentChildren--;

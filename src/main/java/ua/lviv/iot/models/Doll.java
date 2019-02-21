@@ -1,4 +1,4 @@
-package main.java.ua.lviv.iot.models;
+package ua.lviv.iot.models;
 
 public class Doll extends Toy {
 
@@ -7,18 +7,18 @@ public class Doll extends Toy {
     public Doll(double price, Size size) {
         super(price, size);
         switch (size) {
-            case SMALL:
-            {
+            case SMALL: {
                 this.setToyType(ToyType.DOLL_SMALL);
             } break;
-            case MEDIUM:
-            {
+            case MEDIUM: {
                 this.setToyType(ToyType.DOLL_MEDIUM);
             } break;
-            case LARGE:
-            {
+            case LARGE: {
                 this.setToyType(ToyType.DOLL_LARGE);
-            }break;
+            } break;
+            default: {
+                System.out.println("");
+            } break;
         }
     }
 
