@@ -37,12 +37,12 @@ public class Ball extends Toy {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "price=" + this.getPrice() +
-                ", size=" + this.getSize() +
-                ", toyType='" + this.getToyType() + '\'' +
-                ", color='" + color + '\'' +
-                '}';
+        return "Ball{"
+                + "price=" + this.getPrice()
+                + ", size=" + this.getSize()
+                + ", toyType='" + this.getToyType() + '\''
+                + ", color='" + color + '\''
+                + '}';
     }
 
     @Override

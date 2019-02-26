@@ -37,12 +37,12 @@ public class Doll extends Toy {
 
     @Override
     public String toString() {
-        return "Doll{" +
-                "price=" + this.getPrice() +
-                ", size=" + this.getSize() +
-                ", toyType='" + this.getToyType() + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+        return "Doll{"
+                + "price=" + this.getPrice()
+                + ", size=" + this.getSize()
+                + ", toyType='" + this.getToyType() + '\''
+                + ", name='" + name + '\''
+                + '}';
     }
 
     @Override

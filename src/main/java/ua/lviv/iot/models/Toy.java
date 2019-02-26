@@ -37,11 +37,11 @@ public abstract class Toy<T> {
 
     @Override
     public String toString() {
-        return "Toy{" +
-                "price=" + price +
-                ", size=" + size +
-                ", toyType='" + toyType + '\'' +
-                '}';
+        return "Toy{"
+                + "price=" + price
+                + ", size=" + size
+                + ", toyType='" + toyType + '\''
+                + '}';
     }
 
     public abstract void play();

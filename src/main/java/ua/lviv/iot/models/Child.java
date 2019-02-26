@@ -49,9 +49,9 @@ public class Child {
             return false;
         }
         Child child = (Child) o;
-        return age == child.age &&
-                name.equals(child.name) &&
-                parentName.equals(child.parentName);
+        return age == child.age
+                && name.equals(child.name)
+                    && parentName.equals(child.parentName);
     }
 
     @Override

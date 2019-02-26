@@ -47,13 +47,13 @@ public class Figures extends Toy {
 
     @Override
     public String toString() {
-        return "Figures{" +
-                "price=" + this.getPrice() +
-                ", size=" + this.getSize() +
-                ", toyType='" + this.getToyType() + '\'' +
-                ", number=" + number +
-                ", type='" + type + '\'' +
-                '}';
+        return "Figures{"
+                + "price=" + this.getPrice()
+                + ", size=" + this.getSize()
+                + ", toyType='" + this.getToyType() + '\''
+                + ", number=" + number
+                + ", type='" + type + '\''
+                + '}';
     }
 
     @Override
