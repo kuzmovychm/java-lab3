@@ -12,6 +12,10 @@ public class GameRoom {
     private List<Toy> toys = new LinkedList<>();
     private List<Child> children = new LinkedList<>();
 
+    public GameRoom() {
+
+    }
+
     public GameRoom(double playgroundArea,
                     AgeGroup ageGroup,
                     double moneyAvailable) {

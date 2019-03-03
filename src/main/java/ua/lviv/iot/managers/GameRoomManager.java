@@ -26,7 +26,10 @@ public class GameRoomManager implements IGameRoomManager {
     }
 
     @Override
-    public void addGameRoom(final GameRoom gameRoom) {
+    public void addGameRoom(final GameRoom gameRoom) throws NullPointerException {
+        if (gameRoom == null) {
+            throw new NullPointerException();
+        }
         this.gameRooms.add(gameRoom);
     }
 

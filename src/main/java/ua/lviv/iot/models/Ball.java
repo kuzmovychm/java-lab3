@@ -4,6 +4,10 @@ public class Ball extends Toy {
 
     private String color;
 
+    public Ball() {
+
+    }
+
     public Ball(double price, Size size) {
         super(price, size);
         switch (size) {

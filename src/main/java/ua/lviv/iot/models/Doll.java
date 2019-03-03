@@ -4,6 +4,10 @@ public class Doll extends Toy {
 
     private String name;
 
+    public Doll() {
+
+    }
+
     public Doll(double price, Size size) {
         super(price, size);
         switch (size) {

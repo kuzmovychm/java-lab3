@@ -6,6 +6,10 @@ public abstract class Toy<T> {
     private Size size;
     private ToyType toyType;
 
+    public Toy() {
+
+    }
+
     public Toy(double price, Size size) {
         this.price = price;
         this.size = size;
