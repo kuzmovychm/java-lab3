@@ -38,6 +38,30 @@ public class GameRoom {
 
     }
 
+    public void setPlaygroundArea(double playgroundArea) {
+        this.playgroundArea = playgroundArea;
+    }
+
+    public void setAgeGroup(AgeGroup ageGroup) {
+        this.ageGroup = ageGroup;
+    }
+
+    public void setMoneyAvailable(double moneyAvailable) {
+        this.moneyAvailable = moneyAvailable;
+    }
+
+    public void setPresentChildren(int presentChildren) {
+        this.presentChildren = presentChildren;
+    }
+
+    public void setToys(List<Toy> toys) {
+        this.toys = toys;
+    }
+
+    public void setChildren(List<Child> children) {
+        this.children = children;
+    }
+
     public double getPlaygroundArea() {
         return playgroundArea;
     }
@@ -85,26 +109,41 @@ public class GameRoom {
     public void addChild(Child child) {
         if (calculateFreePlaces() > 0) {
             this.children.add(child);
+            presentChildren++;
         } else {
             System.out.println("no free places available");
         }
     }
 
     public void removeChild(Child child) {
-        children.stream().forEach(o1 -> {
-            if (o1.equals(child)) {
-                children.remove(o1);
-                presentChildren--;
+        if (child == null) {
+            return;
+        } else {
+//            children.stream().forEach(o1 -> {
+//                if (o1.equals(child)) {
+//                    children.remove(o1);
+//                    presentChildren--;
+//                }
+//            });
+            for (int i = 0; i < presentChildren; i++) {
+                if (children.get(i).equals(child)) {
+                    children.remove(children.get(i));
+                    presentChildren--;
+                }
             }
-        });
+        }
     }
 
     public void addToy(Toy toy) {
-        if (moneyAvailable > toy.getPrice()) {
-            moneyAvailable -= toy.getPrice();
-            this.toys.add(toy);
+        if (toy == null) {
+            return;
         } else {
-            System.out.println("not enough money to buy this toy");
+            if (moneyAvailable > toy.getPrice()) {
+                moneyAvailable -= toy.getPrice();
+                this.toys.add(toy);
+            } else {
+                System.out.println("not enough money to buy this toy");
+            }
         }
     }
 
