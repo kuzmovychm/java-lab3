@@ -43,6 +43,7 @@ public class GameRoomManager implements IGameRoomManager {
         }
     }
 
+    @Override
     public void sortToysByPrice(final List<Toy> toys, final SortOrder sortOrder) throws NullPointerException {
         if (toys == null || sortOrder == null) {
             throw new NullPointerException();
@@ -54,10 +55,12 @@ public class GameRoomManager implements IGameRoomManager {
         }
     }
 
+    @Override
     public void sortToysByType(final List<Toy> toys) throws NullPointerException {
         if (toys == null) {
             throw new NullPointerException();
         }
         toys.sort((Toy o1, Toy o2) -> o1.getToyType().compareTo(o2.getToyType()));
     }
+
 }
