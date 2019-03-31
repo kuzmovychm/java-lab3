@@ -1,4 +1,4 @@
-package models;
+package ua.lviv.iot.models;
 
 public enum ToyType {
     BALL_SMALL,

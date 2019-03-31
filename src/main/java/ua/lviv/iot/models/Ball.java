@@ -1,4 +1,4 @@
-package models;
+package ua.lviv.iot.models;
 
 public class Ball extends Toy {
 
@@ -7,18 +7,18 @@ public class Ball extends Toy {
     public Ball(double price, Size size) {
         super(price, size);
         switch (size) {
-            case SMALL:
-            {
+            case SMALL: {
                 this.setToyType(ToyType.BALL_SMALL);
             } break;
-            case MEDIUM:
-            {
+            case MEDIUM: {
                 this.setToyType(ToyType.BALL_MEDIUM);
             } break;
-            case LARGE:
-            {
+            case LARGE: {
                 this.setToyType(ToyType.BALL_LARGE);
-            }break;
+            } break;
+            default: {
+                System.out.println("");
+            } break;
         }
     }
 
@@ -37,12 +37,12 @@ public class Ball extends Toy {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "price=" + this.getPrice() +
-                ", size=" + this.getSize() +
-                ", toyType='" + this.getToyType() + '\'' +
-                ", color='" + color + '\'' +
-                '}';
+        return "Ball{"
+                + "price=" + this.getPrice()
+                + ", size=" + this.getSize()
+                + ", toyType='" + this.getToyType() + '\''
+                + ", color='" + color + '\''
+                + '}';
     }
 
     @Override

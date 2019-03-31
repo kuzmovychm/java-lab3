@@ -1,4 +1,4 @@
-package models;
+package ua.lviv.iot.models;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -60,18 +60,18 @@ public class GameRoom {
 
     @Override
     public String toString() {
-        return "GameRoom{" +
-                "playgroundArea=" + playgroundArea +
-                ", ageGroup=" + ageGroup +
-                ", moneyAvailable=" + moneyAvailable +
-                ", presentChildren=" + presentChildren +
-                ", toys=" + toys +
-                ", children=" + children +
-                '}';
+        return "GameRoom{"
+                + "playgroundArea=" + playgroundArea
+                + ", ageGroup=" + ageGroup
+                + ", moneyAvailable=" + moneyAvailable
+                + ", presentChildren=" + presentChildren
+                + ", toys=" + toys
+                + ", children=" + children
+                + '}';
     }
 
     public int calculateMaximalNumberOfChildren() {
-        return (int)(playgroundArea / 4);
+        return (int) (playgroundArea / 4);
     }
 
     public int calculateFreePlaces() {
@@ -87,7 +87,7 @@ public class GameRoom {
     }
 
     public void removeChild(Child child) {
-        children.stream().forEach(o1 ->{
+        children.stream().forEach(o1 -> {
             if (o1.equals(child)) {
                 children.remove(o1);
                 presentChildren--;

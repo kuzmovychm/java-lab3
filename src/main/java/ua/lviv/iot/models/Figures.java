@@ -1,4 +1,4 @@
-package models;
+package ua.lviv.iot.models;
 
 public class Figures extends Toy {
 
@@ -16,6 +16,9 @@ public class Figures extends Toy {
             } break;
             case LARGE: {
                 this.setToyType(ToyType.FIGURES_LARGE);
+            } break;
+            default: {
+                System.out.println("");
             } break;
         }
     }
@@ -44,13 +47,13 @@ public class Figures extends Toy {
 
     @Override
     public String toString() {
-        return "Figures{" +
-                "price=" + this.getPrice() +
-                ", size=" + this.getSize() +
-                ", toyType='" + this.getToyType() + '\'' +
-                ", number=" + number +
-                ", type='" + type + '\'' +
-                '}';
+        return "Figures{"
+                + "price=" + this.getPrice()
+                + ", size=" + this.getSize()
+                + ", toyType='" + this.getToyType() + '\''
+                + ", number=" + number
+                + ", type='" + type + '\''
+                + '}';
     }
 
     @Override

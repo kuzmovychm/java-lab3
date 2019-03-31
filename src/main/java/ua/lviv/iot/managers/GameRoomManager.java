@@ -1,9 +1,10 @@
-package managers;
+package ua.lviv.iot.managers;
 
-import models.GameRoom;
-import models.Toy;
+import ua.lviv.iot.models.GameRoom;
+import ua.lviv.iot.models.Toy;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
 
 public class GameRoomManager implements IGameRoomManager {
 
@@ -12,31 +13,31 @@ public class GameRoomManager implements IGameRoomManager {
     public GameRoomManager() {
     }
 
-    public GameRoomManager(List<GameRoom> gameRooms) {
+    public GameRoomManager(final List<GameRoom> gameRooms) {
         this.gameRooms = gameRooms;
     }
 
-    public List<GameRoom> getGameRooms() {
+    public final List<GameRoom> getGameRooms() {
         return gameRooms;
     }
 
-    public void setGameRooms(List<GameRoom> gameRooms) {
+    public final void setGameRooms(final List<GameRoom> gameRooms) {
         this.gameRooms = gameRooms;
     }
 
     @Override
-    public void addGameroom(GameRoom gameRoom) {
+    public void addGameRoom(final GameRoom gameRoom) {
         this.gameRooms.add(gameRoom);
     }
 
     @Override
-    public void buyToy(GameRoom gameRoom, Toy toy) {
+    public void buyToy(final GameRoom gameRoom, final Toy toy) {
         if (gameRoom.getMoneyAvailable() > toy.getPrice()) {
             gameRoom.addToy(toy);
         }
     }
 
-    public void sortToysByPrice(List<Toy> toys, SortOrder sortOrder) {
+    public void sortToysByPrice(final List<Toy> toys, final SortOrder sortOrder) {
         if (sortOrder == SortOrder.ASCENDING) {
             toys.sort((Toy o1, Toy o2) -> (int) (o1.getPrice() - o2.getPrice()));
         } else {
@@ -45,7 +46,7 @@ public class GameRoomManager implements IGameRoomManager {
 
     }
 
-    public void sortToysByType(List<Toy> toys) {
-        toys.sort((Toy o1, Toy o2)->o1.getToyType().compareTo(o2.getToyType()));
+    public void sortToysByType(final List<Toy> toys) {
+        toys.sort((Toy o1, Toy o2) -> o1.getToyType().compareTo(o2.getToyType()));
     }
 }
