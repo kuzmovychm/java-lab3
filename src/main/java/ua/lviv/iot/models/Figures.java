@@ -5,6 +5,10 @@ public class Figures extends Toy {
     private int number;
     private String type;
 
+    public Figures() {
+
+    }
+
     public Figures(double price, Size size) {
         super(price, size);
         switch (size) {

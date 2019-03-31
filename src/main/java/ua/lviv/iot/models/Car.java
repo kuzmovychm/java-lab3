@@ -4,6 +4,10 @@ public class Car extends Toy {
 
     private String type;
 
+    public Car() {
+
+    }
+
     public Car(double price, Size size) {
         super(price, size);
         switch (size) {

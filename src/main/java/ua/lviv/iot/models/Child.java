@@ -8,6 +8,10 @@ public class Child {
     private String name;
     private String parentName;
 
+    public Child() {
+
+    }
+
     public Child(int age, String name, String parentName) {
         this.age = age;
         this.name = name;
