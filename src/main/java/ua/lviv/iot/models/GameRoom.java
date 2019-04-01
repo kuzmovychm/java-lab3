@@ -5,12 +5,22 @@ import java.util.List;
 
 public class GameRoom {
 
-    private double playgroundArea;
     private AgeGroup ageGroup;
+    private double playgroundArea;
     private double moneyAvailable;
     private int presentChildren;
     private List<Toy> toys = new LinkedList<>();
     private List<Child> children = new LinkedList<>();
+
+    public String getHeaders() {
+        return "ageGroup," + "playgroundArea," + "moneyAvailable," + "presentChildren";
+    }
+
+    public String toCSV() {
+        return this.getAgeGroup().toString() + "," + this.getPlaygroundArea() + ","
+                    + this.getMoneyAvailable() + "," + this.getPresentChildren();
+    }
+
 
     public GameRoom() {
 
