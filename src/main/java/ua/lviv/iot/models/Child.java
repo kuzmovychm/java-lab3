@@ -2,7 +2,17 @@ package ua.lviv.iot.models;
 
 import java.util.Objects;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Child {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer id;
 
     private int age;
     private String name;
@@ -55,11 +65,13 @@ public class Child {
         Child child = (Child) o;
         return age == child.age
                 && name.equals(child.name)
-                    && parentName.equals(child.parentName);
+                && parentName.equals(child.parentName);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(age, name, parentName);
     }
+
 }
+
