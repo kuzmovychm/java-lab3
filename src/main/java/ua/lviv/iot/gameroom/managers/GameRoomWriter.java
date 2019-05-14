@@ -1,6 +1,6 @@
-package ua.lviv.iot.managers;
+package ua.lviv.iot.gameroom.managers;
 
-import ua.lviv.iot.models.GameRoom;
+import ua.lviv.iot.gameroom.models.GameRoom;
 
 import java.io.BufferedWriter;
 import java.io.File;

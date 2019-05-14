@@ -1,4 +1,4 @@
-package ua.lviv.iot.controllers;
+package ua.lviv.iot.gameroom.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import ua.lviv.iot.models.Child;
-import ua.lviv.iot.repositories.ChildRepository;
+import ua.lviv.iot.gameroom.models.Child;
+import ua.lviv.iot.gameroom.repositories.ChildRepository;
 
 @Controller
 @RequestMapping(path = "/demo")

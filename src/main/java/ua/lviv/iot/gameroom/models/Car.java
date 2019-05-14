@@ -1,24 +1,24 @@
-package ua.lviv.iot.models;
+package ua.lviv.iot.gameroom.models;
 
-public class Doll extends Toy {
+public class Car extends Toy {
 
-    private String name;
+    private String type;
 
-    public Doll() {
+    public Car() {
 
     }
 
-    public Doll(double price, Size size) {
+    public Car(double price, Size size) {
         super(price, size);
         switch (size) {
             case SMALL: {
-                this.setToyType(ToyType.DOLL_SMALL);
+                this.setToyType(ToyType.CAR_SMALL);
             } break;
             case MEDIUM: {
-                this.setToyType(ToyType.DOLL_MEDIUM);
+                this.setToyType(ToyType.CAR_MEDIUM);
             } break;
             case LARGE: {
-                this.setToyType(ToyType.DOLL_LARGE);
+                this.setToyType(ToyType.CAR_LARGE);
             } break;
             default: {
                 System.out.println("");
@@ -26,32 +26,32 @@ public class Doll extends Toy {
         }
     }
 
-    public Doll(double price, Size size, String name) {
+    public Car(double price, Size size, String type) {
         this(price, size);
-        this.name = name;
+        this.type = type;
     }
 
-    public String getName() {
-        return name;
+    public String getType() {
+        return type;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override
     public String toString() {
-        return "Doll{"
+        return "Car{"
                 + "price=" + this.getPrice()
                 + ", size=" + this.getSize()
                 + ", toyType='" + this.getToyType() + '\''
-                + ", name='" + name + '\''
+                + ", type='" + type + '\''
                 + '}';
     }
 
     @Override
     public void play() {
-        System.out.println("Playing with a doll");
+        System.out.println("Playing with a car");
     }
 
 }
