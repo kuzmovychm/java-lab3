@@ -1,20 +1,19 @@
 package ua.lviv.iot.gameroom.models;
 
-import java.util.Objects;
+import lombok.Data;
 
+import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
+@Data
 @Entity
 public class Child {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private @Id @GeneratedValue Long id;
 
     private int age;
     private String name;
