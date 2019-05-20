@@ -1,4 +1,4 @@
-package ua.lviv.iot.models;
+package ua.lviv.iot.gameroom.models;
 
 import java.util.LinkedList;
 import java.util.List;

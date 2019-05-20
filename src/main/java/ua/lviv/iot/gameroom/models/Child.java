@@ -1,8 +1,19 @@
-package ua.lviv.iot.models;
+package ua.lviv.iot.gameroom.models;
+
+import lombok.Data;
 
 import java.util.Objects;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+
+@Data
+@Entity
 public class Child {
+
+    private @Id @GeneratedValue Long id;
 
     private int age;
     private String name;
@@ -55,11 +66,13 @@ public class Child {
         Child child = (Child) o;
         return age == child.age
                 && name.equals(child.name)
-                    && parentName.equals(child.parentName);
+                && parentName.equals(child.parentName);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(age, name, parentName);
     }
+
 }
+

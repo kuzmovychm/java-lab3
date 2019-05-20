@@ -1,4 +1,4 @@
-package ua.lviv.iot.models;
+package ua.lviv.iot.gameroom.models;
 
 public enum Size {
     SMALL, MEDIUM, LARGE;
